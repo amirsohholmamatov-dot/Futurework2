@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>FutureWork — Регистрация</title>
+
+<link rel="stylesheet" href="Proj.css">
+
+
+</head>
+
+<body>
+
+
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="#top" class="logo">
+            <span class="logo-icon">F</span>
+
+            <span>
+                Future<span>Work</span>
+            </span>
+        </a>
+
+        <nav class="nav">
+
+            <a href="#top">Главная</a>
+            <a href="#about">О проекте</a>
+            <a href="#skills">Навыки</a>
+            <a href="#careers">Профессии</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <a href="#login" class="login-link">
+                Войти
+            </a>
+
+            <a href="#register" class="nav-register">
+                Регистрация
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main id="top">
+
+    <section class="register-page" id="register">
+
+        <div class="register-card">
+
+            <section class="register-info">
+
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Будущее начинается сегодня
+                </div>
+
+                <h1>
+                    Создай свой
+                    <span>профиль</span>
+                </h1>
+
+                <p class="register-description">
+                    Создай аккаунт в FutureWork и начни
+                    строить собственную траекторию
+                    развития для профессий будущего.
+                </p>
+
+                <div class="advantages">
+
+                    <div class="advantage">
+
+                        <div class="advantage-icon">✦</div>
+
+                        <div>
+                            <h3>Профессии будущего</h3>
+
+                            <p>
+                                Изучай современные направления,
+                                технологии и новые специальности.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="advantage">
+
+                        <div class="advantage-icon">↗</div>
+
+                        <div>
+                            <h3>Развитие навыков</h3>
+
+                            <p>
+                                Развивай навыки и создавай
+                                собственную карьерную траекторию.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="advantage">
+
+                        <div class="advantage-icon">◇</div>
+
+                        <div>
+                            <h3>Персональные рекомендации</h3>
+
+                            <p>
+                                Получай рекомендации профессий
+                                на основе своего профиля.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="register-form-container">
+
+                <div class="form-header">
+
+                    <h2>Создать аккаунт</h2>
+
+                    <p>
+                        Заполни все необходимые данные
+                    </p>
+
+                </div>
+
+
+                <form
+                    class="register-form"
+                    id="register-form"
+                    action="/register"
+                    method="POST"
+                    novalidate
+                >
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Имя
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◯</span>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Введите ваше имя"
+                                autocomplete="name"
+                                minlength="2"
+                                maxlength="50"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="nickname">
+                            Псевдоним
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">@</span>
+
+                            <input
+                                type="text"
+                                id="nickname"
+                                name="nickname"
+                                placeholder="Например: FutureAlex"
+                                minlength="3"
+                                maxlength="20"
+                                autocomplete="username"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="input-hint">
+                            От 3 до 20 символов. Только латинские буквы, цифры и _.
+                        </small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">@</span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@gmail.com"
+                                autocomplete="email"
+                                maxlength="100"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="input-hint">
+                            Например: name@gmail.com
+                        </small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Номер телефона
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">☎</span>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="+998 90 123 45 67"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="input-hint">
+                            Введите номер с кодом страны.
+                        </small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="age">
+                            Возраст
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◷</span>
+
+                            <input
+                                type="number"
+                                id="age"
+                                name="age"
+                                placeholder="Например: 18"
+                                min="14"
+                                max="120"
+                                step="1"
+                                required
+                            >
+
+                        </div>
+
+                        <small class="input-hint">
+                            Допустимый возраст: от 14 до 120 лет.
+                        </small>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Пароль
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◆</span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Минимум 8 символов"
+                                minlength="8"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="password-confirm">
+                            Повторите пароль
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◆</span>
+
+                            <input
+                                type="password"
+                                id="password-confirm"
+                                name="password_confirm"
+                                placeholder="Повторите пароль"
+                                minlength="8"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="city">
+                            Город
+                            <span class="required">*</span>
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">◉</span>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                placeholder="Например: Ташкент"
+                                maxlength="50"
+                                autocomplete="address-level2"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="experience">
+
+                            Опыт
+
+                            <span class="optional">
+                                необязательно
+                            </span>
+
+                        </label>
+
+                        <div class="input-wrapper select-wrapper">
+
+                            <span class="input-icon">◆</span>
+
+                            <select
+                                id="experience"
+                                name="experience"
+                            >
+
+                                <option value="">
+                                    Выберите уровень
+                                </option>
+
+                                <option value="student">
+                                    Ученик / школьник
+                                </option>
+
+                                <option value="beginner">
+                                    Начинающий
+                                </option>
+
+                                <option value="junior">
+                                    Junior
+                                </option>
+
+                                <option value="middle">
+                                    Middle
+                                </option>
+
+                                <option value="senior">
+                                    Senior
+                                </option>
+
+                                <option value="expert">
+                                    Эксперт
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            value="accepted"
+                            required
+                        >
+
+                        <span>
+
+                            Я согласен с
+                            <a href="#terms-page">
+                                условиями использования
+                            </a>
+
+                            и
+
+                            <a href="#privacy">
+                                политикой конфиденциальности
+                            </a>.
+
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="register-button"
+                        disabled
+                    >
+
+                        <span>
+                            Создать аккаунт
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                </form>
+
+
+                <div class="divider">
+                    <span>или</span>
+                </div>
+
+
+                <div class="login-text">
+
+                    Уже есть аккаунт?
+
+                    <a href="#login">
+                        Войти
+                    </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+
+    <section
+        class="login-section"
+        id="login"
+    >
+
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <div class="login-icon">
+                    F
+                </div>
+
+                <h2>
+                    С возвращением
+                </h2>
+
+                <p>
+                    Войди в свой аккаунт FutureWork
+                </p>
+
+            </div>
+
+
+            <form
+                class="login-form"
+                id="login-form"
+                action="/login"
+                method="POST"
+            >
+
+                <div class="input-group">
+
+                    <label for="login-email">
+                        Email
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">@</span>
+
+                        <input
+                            type="email"
+                            id="login-email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="login-password">
+                        Пароль
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icon">◆</span>
+
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="password"
+                            placeholder="Введите пароль"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="register-button"
+                >
+
+                    <span>
+                        Войти
+                    </span>
+
+                    <span class="button-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="anchor-section"></section>
+    <section id="skills" class="anchor-section"></section>
+    <section id="careers" class="anchor-section"></section>
+
+    <section id="terms-page" class="anchor-section"></section>
+    <section id="privacy" class="anchor-section"></section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        © 2026 FutureWork.
+        Создаём будущее вместе.
+    </p>
+
+</footer>
+
+
+<script src="Proj.js"></script>
+
+
+</body>
+
+</html>
